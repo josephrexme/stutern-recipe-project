@@ -7,7 +7,7 @@ import FoodBg from '../../assets/food-bg.jpg';
 import FoodItem from './FoodItem';
 import Footer from './Footer';
 import Container from './Container';
-
+import Form from './Form';
 const HomeStyle = styled.div`
   header, footer{
     text-align: center;
@@ -56,6 +56,7 @@ class Home extends Component {
         <Header>
           <h1>Recipouille</h1>
           <p>Your Trusted Source For Great Food Recipes</p>
+          <Form />
         </Header>
         <main>
           <Container>

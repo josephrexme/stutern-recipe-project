@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   }
   :root{
     --color-brand-1: #c6430b;
+    --border-radius: 0.4em;
   }
   body{
     margin: 0;
