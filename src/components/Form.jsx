@@ -8,28 +8,38 @@ const Formstyle = styled.form`
 
   input{
     height: 40px;
+    margin: 5px 0;
     border: 0;
     border-radius: var(--border-radius);
     font: inherit;
-    margin-right: 20px;
     padding: 10px;
-    width: 200px;
+    width: 100%;
   }
 
   button{
+    display: inline-block;
+    width: 100%;
     height: 40px;
+    margin: 10px 0;
     background: var(--color-brand-1);
     border:none;
     border-radius: var(--border-radius);
     color: white;
-    margin-left: 10px;
     font: inherit;
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
   }
-
-
+  @media(min-width: 720px) {
+    input{
+      width: 200px;
+      margin: 0 5px;
+    }
+    button{
+      width: auto;
+      margin: 0 5px;
+    }
+  }
 `;
 
 class Form extends Component {

@@ -18,8 +18,7 @@ const HomeStyle = styled.div`
 `;
 
 const Header = styled.header`
-  height: 250px;
-  padding: 60px;
+  padding: 70px 20px;
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(${FoodBg});
   background-size: cover;
   background-position: center;
