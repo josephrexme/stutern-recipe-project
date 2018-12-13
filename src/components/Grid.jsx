@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
 export const Grid = styled.div`
-  padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    justify-items: center;
   @media(min-width: 645px) {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-rows: auto;
   }
 `;
 
 export const Column = styled.div`
-  padding: 10px;
   @media (min-width: 645px) {
-    flex: 0 0 33.3%;
-    max-width: 33.3%;
+   
+    max-width: 100%;
   }
 `;
