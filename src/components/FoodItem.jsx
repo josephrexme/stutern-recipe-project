@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import Rating from 'react-rating';
 
 const FoodItemStyle = styled.div`
-  height: 300px;
+  height: 320px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
   background: var(--color-brand-1);
@@ -31,10 +32,10 @@ const FoodItemStyle = styled.div`
 
 const FoodItem = ({ children, rating, image }) => (
   <FoodItemStyle>
-    <img src={image} alt="Food item" />
+    <img src={image || 'http://placehold.it/200'} alt="Food item" />
     <div>
       {children}
-      <h5>{rating}</h5>
+      <h5><Rating initialRating={rating} /></h5>
     </div>
   </FoodItemStyle>
 );

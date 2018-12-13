@@ -64,8 +64,8 @@ class Home extends Component {
               { recipes.length ? '' : 'There are no recipe items'  }
               { ready === 'loading' ? 'Loading...' : '' }
               { recipes.map(recipe => (
-                <Column key={recipe.id}>
-                  <FoodItem image={recipe.fields.Icon[0].url} rating="4.5">
+                <Column columns="3" key={recipe.id}>
+                  <FoodItem image={recipe.fields.Icon ? recipe.fields.Icon[0].url : ''} rating={recipe.fields.Rating}>
                     <h3><Link to={`/recipe/${recipe.id}`}>{recipe.fields.Name}</Link></h3>
                   </FoodItem>
                 </Column>
